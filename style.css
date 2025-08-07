@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+  background-size: 600% 600%;
+  animation: gradientBG 20s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.moods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.mood-btn {
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mood-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.happy {
+  background: linear-gradient(to right, #f6d365, #fda085);
+}
+
+.sad {
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+}
+
+.energetic {
+  background: linear-gradient(to right, #f093fb, #f5576c);
+}
+
+.relaxed {
+  background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+}
+
+#suggestions {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#suggestions h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+#suggestions ul {
+  list-style: 🎵;
+  padding-left: 20px;
+}
+
+#suggestions li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}

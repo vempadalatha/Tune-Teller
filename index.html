@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moodify 🎵</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Moodify 🎵</h1>
+    <p class="subtitle">Discover songs that match your mood!</p>
+    
+    <div class="moods">
+      <button class="mood-btn happy" onclick="showSongs('happy')">😊 Happy</button>
+      <button class="mood-btn sad" onclick="showSongs('sad')">😢 Sad</button>
+      <button class="mood-btn energetic" onclick="showSongs('energetic')">⚡ Energetic</button>
+      <button class="mood-btn relaxed" onclick="showSongs('relaxed')">😌 Relaxed</button>
+    </div>
+
+    <div id="suggestions"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
